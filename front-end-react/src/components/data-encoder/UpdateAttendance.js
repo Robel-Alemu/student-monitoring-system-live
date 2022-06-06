@@ -86,7 +86,7 @@ function UpdateAttendance(props) {
     };
 
     //   props.onUpdateStudent(studentData);
-    fetch("http://localhost:8080/api/update-attendance/" + enteredStudentId, {
+    fetch("https://student-monitoring-system-live.herokuapp.com/api/update-attendance/" + enteredStudentId, {
       method: "PUT",
       body: JSON.stringify(attendanceData),
       headers: { "Content-Type": "application/json" , "Authorization":"Bearer " + token},
@@ -117,7 +117,7 @@ function UpdateAttendance(props) {
     event.preventDefault();
     const id = studentIdRef.current.value;
 
-    fetch("https://student-monitoring.herokuapp.com/api/delete-student/" + id, {
+    fetch("https://student-monitoring-system-live.herokuapp.com/api/delete-student/" + id, {
       method: "DELETE",
       //   body: JSON.stringify(studentData),
       headers: { "Content-Type": "application/json" },

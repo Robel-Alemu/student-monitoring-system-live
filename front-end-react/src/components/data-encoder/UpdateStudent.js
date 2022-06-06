@@ -84,7 +84,7 @@ function UpdateStudent(props) {
   function gradeHandler(e) {
     e.preventDefault();
     fetch(
-      "http://localhost:8080/api/get-all-class"
+      "https://student-monitoring-system-live.herokuapp.com/api/get-all-class"
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
     )
       .then((response) => {
@@ -125,7 +125,7 @@ function UpdateStudent(props) {
       });
 
     fetch(
-      "http://localhost:8080/api/get-class/" + gradeRef.current.value
+      "https://student-monitoring-system-live.herokuapp.com/api/get-class/" + gradeRef.current.value
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
     )
       .then((response) => {
@@ -265,7 +265,7 @@ function UpdateStudent(props) {
     const FinaStudentData = [studentData, parent];
 
     //   props.onUpdateStudent(studentData);
-    fetch("http://localhost:8080/api/update-student/" + enteredStudentId, {
+    fetch("https://student-monitoring-system-live.herokuapp.com/api/update-student/" + enteredStudentId, {
       method: "PUT",
       body: JSON.stringify(FinaStudentData),
       headers: { "Content-Type": "application/json" , "Authorization":"Bearer " + token},
@@ -296,7 +296,7 @@ function UpdateStudent(props) {
     if (window.confirm("Are you sure?")) {
       const id = studentId.current.value;
 
-      fetch("http://localhost:8080/api/delete-student/" + id, {
+      fetch("https://student-monitoring-system-live.herokuapp.com/api/delete-student/" + id, {
         // "https://student-monitoring.herokuapp.com/api/delete-student/" + id, {
         method: "DELETE",
         //   body: JSON.stringify(studentData),

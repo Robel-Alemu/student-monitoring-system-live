@@ -68,7 +68,8 @@ function AddMultipleStudents() {
 
     fetch(
       // https://student-monitoring.herokuapp.com
-      "http://localhost:8080/api/add-multiple-students",
+      "https://student-monitoring-system-live.herokuapp.com/api/add-multiple-students",
+      // "http://localhost:8080/api/add-multiple-students",
       {
         method: "POST",
         body: JSON.stringify(students),

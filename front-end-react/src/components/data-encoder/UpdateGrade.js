@@ -37,7 +37,7 @@ const subjectOf7And8 = ["Amharic", "English", "Maths", "Physics", "Biology", "Ch
   function termHandler(e){
     e.preventDefault();
     fetch(
-      "http://localhost:8080/api/get-all-class"
+      "https://student-monitoring-system-live.herokuapp.com/api/get-all-class"
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
      
       
@@ -83,7 +83,7 @@ const subjectOf7And8 = ["Amharic", "English", "Maths", "Physics", "Biology", "Ch
   
   
   fetch(
-    "http://localhost:8080/api/get-class/"+gradeRef.current.value
+    "https://student-monitoring-system-live.herokuapp.com/api/get-class/"+gradeRef.current.value
     // "https://student-monitoring.herokuapp.com/api/Student-Information",
    
     
@@ -185,7 +185,7 @@ console.log(grades);
         fetch
         (
             // https://student-monitoring.herokuapp.com
-            "http://localhost:8080/api/update-grade",
+            "https://student-monitoring-system-live.herokuapp.com/api/update-grade",
             {
               method: "PUT",
               body: JSON.stringify(grade),

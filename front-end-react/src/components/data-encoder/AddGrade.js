@@ -70,7 +70,8 @@ const subjectOf7And8 = ["Amharic", "English", "Maths", "Physics", "Biology", "Ch
   function loadHandler(e){
     e.preventDefault();
     fetch(
-      "http://localhost:8080/api/get-all-class"
+      "https://student-monitoring-system-live.herokuapp.com/api/get-all-class"
+      // "http://localhost:8080/api/get-all-class"
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
      
       
@@ -114,7 +115,8 @@ const subjectOf7And8 = ["Amharic", "English", "Maths", "Physics", "Biology", "Ch
   })
   
   fetch(
-    "http://localhost:8080/api/get-class/"+gradeRef.current.value
+    "https://student-monitoring-system-live.herokuapp.com/api/get-class/"+gradeRef.current.value
+    // "http://localhost:8080/api/get-class/"+gradeRef.current.value
     // "https://student-monitoring.herokuapp.com/api/Student-Information",
    
     
@@ -188,7 +190,8 @@ const subjectOf7And8 = ["Amharic", "English", "Maths", "Physics", "Biology", "Ch
 
     fetch(
       // https://student-monitoring.herokuapp.com
-      "http://localhost:8080/api/add-grade",
+      "https://student-monitoring-system-live.herokuapp.com/api/add-grade",
+      // "http://localhost:8080/api/add-grade",
       {
         method: "POST",
         body: JSON.stringify(grade),

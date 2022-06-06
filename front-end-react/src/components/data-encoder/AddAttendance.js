@@ -64,8 +64,9 @@ function AddAttendance() {
     function termHandler(e){
       e.preventDefault();
       fetch(
-        "http://localhost:8080/api/get-all-class"
-        // "https://student-monitoring.herokuapp.com/api/Student-Information",
+        "https://student-monitoring-system-live.herokuapp.com/api/get-all-class"
+        // "http://localhost:8080/api/get-all-class"
+        // "https://student-monitoring-system-live.herokuapp.com/api/Student-Information",
        
         
         )
@@ -110,7 +111,8 @@ function AddAttendance() {
     
     
     fetch(
-      "http://localhost:8080/api/get-class/"+gradeRef.current.value
+      "https://student-monitoring-system-live.herokuapp.com/api/get-class/"+gradeRef.current.value
+      // "http://localhost:8080/api/get-class/"+gradeRef.current.value
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
      
       
@@ -171,7 +173,8 @@ function AddAttendance() {
 
       fetch(
         // https://student-monitoring.herokuapp.com
-        "http://localhost:8080/api/add-attendance",
+        "https://student-monitoring-system-live.herokuapp.com/api/add-attendance",
+        // "http://localhost:8080/api/add-attendance",
         {
           method: "POST",
           body: JSON.stringify(attendances),

@@ -69,7 +69,8 @@ function EditGrade(props) {
 
     //   props.onUpdateStudent(studentData);
     fetch(
-      "http://localhost:8080/api/edit-grade/" + term + "/" + grade + "/" + section + "/" + subject + "/" + enteredStudentId, {
+      "https://student-monitoring-system-live.herokuapp.com/api/edit-grade/" + term + "/" + grade + "/" + section + "/" + subject + "/" + enteredStudentId, {
+      // "http://localhost:8080/api/edit-grade/" + term + "/" + grade + "/" + section + "/" + subject + "/" + enteredStudentId, {
       method: "PUT",
       body: JSON.stringify(studentData),
       headers: { "Content-Type": "application/json" , "Authorization":"Bearer " + token},
