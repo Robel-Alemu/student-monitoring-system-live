@@ -60,7 +60,7 @@ function ViewAttendancePage({ title }) {
   
   
     fetch(
-      "http://localhost:8080/api/get-class/"+gradeRef.current.value
+      "https://student-monitoring-system-live.herokuapp.com/api/get-class/"+gradeRef.current.value
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
      
       
@@ -97,7 +97,7 @@ function ViewAttendancePage({ title }) {
   function termHandler(e) {
     e.preventDefault();
     fetch(
-      "http://localhost:8080/api/get-all-class"
+      "https://student-monitoring-system-live.herokuapp.com/api/get-all-class"
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
     )
       .then((response) => {
@@ -132,7 +132,7 @@ function ViewAttendancePage({ title }) {
       });
 
     fetch(
-      "http://localhost:8080/api/get-class/" + gradeRef.current.value
+      "https://student-monitoring-system-live.herokuapp.com/api/get-class/" + gradeRef.current.value
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
     )
       .then((response) => {
@@ -165,7 +165,7 @@ function ViewAttendancePage({ title }) {
     setIsLoading(true);
     fetch(
       // "https://student-monitoring.herokuapp.com/filter-attendance/year/term/grade/section
-      "http://localhost:8080/api/filter-attendance/" +
+      "https://student-monitoring-system-live.herokuapp.com/api/filter-attendance/" +
         // year +
         // "/" +
         // term +

@@ -16,7 +16,7 @@ function AllUsersPage() {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      "http://localhost:8080/api/users",
+      "https://student-monitoring-system-live.herokuapp.com/api/users",
       // "https://student-monitoring.herokuapp.com/api/users",
        {
       method: "GET",

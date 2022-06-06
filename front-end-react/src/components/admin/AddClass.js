@@ -69,7 +69,7 @@ const token = localStorage.getItem("token")
    
 
     fetch(
-      "http://localhost:8080/api/add-class",
+      "https://student-monitoring-system-live.herokuapp.com/api/add-class",
       {
         method: "POST",
         body: JSON.stringify(classData),

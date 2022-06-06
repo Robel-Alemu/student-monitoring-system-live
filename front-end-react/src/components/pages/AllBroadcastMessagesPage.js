@@ -48,7 +48,7 @@ function AllBroadcastMessagesPage() {
     //   })
 
       fetch(
-        "http://localhost:8080/api/broadcast-messages",{
+        "https://student-monitoring-system-live.herokuapp.com/api/broadcast-messages",{
           method: "GET",
           
           headers: { "Content-Type": "application/json" , "Authorization":"Bearer " + token},

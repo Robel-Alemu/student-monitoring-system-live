@@ -38,7 +38,7 @@ function AddUser(props) {
     event.preventDefault();
 
     fetch(
-      "http://localhost:8080/api/Users",
+      "https://student-monitoring-system-live.herokuapp.com/api/Users",
       // "https://student-monitoring.herokuapp.com/api/Users",
       {
         method: "POST",

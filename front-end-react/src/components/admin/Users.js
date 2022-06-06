@@ -18,7 +18,7 @@ function Users(props) {
       
       const id = props.userId;
       
-      fetch("http://localhost:8080/api/delete/" + id, {
+      fetch("https://student-monitoring-system-live.herokuapp.com/api/delete/" + id, {
         method: "DELETE",
         //   body: JSON.stringify(studentData),
         headers: { "Content-Type": "application/json" , "Authorization":"Bearer " + token},

@@ -85,7 +85,7 @@ setIsRequired(false);
     
 
     fetch(
-      "http://localhost:8080/api/update-class/"+className,
+      "https://student-monitoring-system-live.herokuapp.com/api/update-class/"+className,
       {
         method: "PUT",
         body: JSON.stringify(classData),

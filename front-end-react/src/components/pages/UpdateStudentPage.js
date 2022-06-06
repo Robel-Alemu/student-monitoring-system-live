@@ -22,7 +22,7 @@ const [isLoading, setIsLoading] = useState(true);
 //     setIsLoading(true);
     function searchHandler(){
     fetch(
-      "http://localhost:8080/api/Student-Information/"+enteredId
+      "https://student-monitoring-system-live.herokuapp.com/api/Student-Information/"+enteredId
       // "https://student-monitoring.herokuapp.com/api/Student-Information/"+enteredId
       )
       .then((response) => {

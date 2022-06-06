@@ -22,7 +22,7 @@ function SendMessage() {
   function searchHandler() {
     setIsLoading(true);
     fetch(
-      "http://localhost:8080/api/Student-Information/" + id.current.value
+      "https://student-monitoring-system-live.herokuapp.com/api/Student-Information/" + id.current.value
       // "https://student-monitoring.herokuapp.com/api/Student-Information/"+enteredId
     )
       .then((response) => {
@@ -98,7 +98,7 @@ function SendMessage() {
       setMessage(m);
     }
 
-    fetch("http://localhost:8080/api/send-message", {
+    fetch("https://student-monitoring-system-live.herokuapp.com/api/send-message", {
       method: "POST",
       body: JSON.stringify(message),
      headers: { "Content-Type": "application/json" , "Authorization":"Bearer " + token},

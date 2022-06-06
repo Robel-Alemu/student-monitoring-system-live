@@ -49,7 +49,7 @@ function ViewMessages() {
     //   })
 
       fetch(
-        "http://localhost:8080/api/view-messages",{
+        "https://student-monitoring-system-live.herokuapp.com/api/view-messages",{
           method: "GET",
           
           headers: { "Content-Type": "application/json" , "Authorization":"Bearer " + token},

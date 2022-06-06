@@ -11,7 +11,7 @@ function AllStudentsPage() {
   useEffect(() => {
     setIsLoading(true);
     fetch(
-      "http://localhost:8080/api/Student-Information"
+      "https://student-monitoring-system-live.herokuapp.com/api/Student-Information"
       // "https://student-monitoring.herokuapp.com/api/Student-Information"
       )
       .then((response) => {

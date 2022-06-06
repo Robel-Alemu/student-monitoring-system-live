@@ -39,7 +39,7 @@ function SentMessages(props) {
       message: updatedMessage,
     };
 
-    fetch("http://localhost:8080/api/edit-message/" + id, {
+    fetch("https://student-monitoring-system-live.herokuapp.com/api/edit-message/" + id, {
       method: "PUT",
       body: JSON.stringify(editMessage),
       headers: { "Content-Type": "application/json" , "Authorization":"Bearer " + token},

@@ -38,7 +38,7 @@ function BroadcastMessages(props) {
       message: updatedMessage,
     };
 
-    fetch("http://localhost:8080/api/update-message/" + id, {
+    fetch("https://student-monitoring-system-live.herokuapp.com/api/update-message/" + id, {
       method: "PUT",
       body: JSON.stringify(editMessage),
       headers: { "Content-Type": "application/json" },

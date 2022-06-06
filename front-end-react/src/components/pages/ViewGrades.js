@@ -51,7 +51,7 @@ function onLoadHandler(e){
   
   
     fetch(
-      "http://localhost:8080/api/get-class/"+gradeRef.current.value
+      "https://student-monitoring-system-live.herokuapp.com/api/get-class/"+gradeRef.current.value
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
      
       
@@ -108,7 +108,7 @@ function onLoadHandler(e){
   function termHandler(e){
     e.preventDefault();
     fetch(
-      "http://localhost:8080/api/get-all-class"
+      "https://student-monitoring-system-live.herokuapp.com/api/get-all-class"
       // "https://student-monitoring.herokuapp.com/api/Student-Information",
      
       
@@ -153,7 +153,7 @@ function onLoadHandler(e){
   })
   
   fetch(
-    "http://localhost:8080/api/get-class/"+gradeRef.current.value
+    "https://student-monitoring-system-live.herokuapp.com/api/get-class/"+gradeRef.current.value
     // "https://student-monitoring.herokuapp.com/api/Student-Information",
    
     
@@ -209,7 +209,7 @@ function onLoadHandler(e){
     setIsLoading(true);
     fetch(
       // "https://student-monitoring.herokuapp.com
-      "http://localhost:8080/api/filter-grades/" +
+      "https://student-monitoring-system-live.herokuapp.com/api/filter-grades/" +
         term +
         "/" +
         grade +

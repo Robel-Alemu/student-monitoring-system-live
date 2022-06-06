@@ -5,7 +5,7 @@ function SignupPage() {
   const history = useHistory();
   function signupHandler(userData) {
     fetch(
-      "http://localhost:8080/api/Users",
+      "https://student-monitoring-system-live.herokuapp.com/api/Users",
       {
         method: "POST",
         body: JSON.stringify(userData),

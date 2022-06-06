@@ -51,7 +51,7 @@ const terms = ["first-term", "second-term", "third-term", "fourth-term"];
 function termHandler(e){
   e.preventDefault();
   fetch(
-    "http://localhost:8080/api/get-all-class"
+    "https://student-monitoring-system-live.herokuapp.com/api/get-all-class"
     // "https://student-monitoring.herokuapp.com/api/Student-Information",
    
     
@@ -91,7 +91,7 @@ function termHandler(e){
 
 
 fetch(
-  "http://localhost:8080/api/get-class/"+gradeRef.current.value
+  "https://student-monitoring-system-live.herokuapp.com/api/get-class/"+gradeRef.current.value
   // "https://student-monitoring.herokuapp.com/api/Student-Information",
  
   
@@ -129,7 +129,7 @@ fetch(
     setIsLoading(true);
     fetch(
      
-        "http://localhost:8080/api/get-attendance/"+enteredGrade+"/"+enteredSection+"/"+enteredId+"/"+startDate
+        "https://student-monitoring-system-live.herokuapp.com/api/get-attendance/"+enteredGrade+"/"+enteredSection+"/"+enteredId+"/"+startDate
      
     )
       .then((response) => {
