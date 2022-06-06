@@ -36,7 +36,7 @@ export function AuthProvider({ children }) {
     }
 
     fetch(
-      "http://localhost:8080/api/login",
+      "https://student-monitoring-system-live.herokuapp.com/api/login",
       {
         method: "POST",
         body: JSON.stringify(userData),
@@ -73,7 +73,7 @@ export function AuthProvider({ children }) {
  async function getUser(email){
 
   try{
-    const result = await axios.get("http://localhost:8080/api/users/"+email);
+    const result = await axios.get("https://student-monitoring-system-live.herokuapp.com/api/users/"+email);
     return result.data[0];
     console.log(result)
 
