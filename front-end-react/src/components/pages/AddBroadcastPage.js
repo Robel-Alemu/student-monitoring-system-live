@@ -42,7 +42,7 @@ function AddBroadcastPage() {
        
          
         }
-        history.push('/');
+        history.push('/admin');
         // setResponse(data);
 
       });

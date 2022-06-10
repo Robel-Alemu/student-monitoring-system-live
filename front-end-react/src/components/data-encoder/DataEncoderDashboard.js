@@ -39,7 +39,7 @@ export default function DataEncoderDashboard() {
   <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
   <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
 </svg> <a className={classes.download} style={{color:"white"}}
-        href="https://firebasestorage.googleapis.com/v0/b/phoneauth2-c5056.appspot.com/o/students2.xlsx?alt=media&token=1666fda1-b676-4f28-827d-e12febfb3ad1"
+        href="https://firebasestorage.googleapis.com/v0/b/phoneauth2-c5056.appspot.com/o/students2%20(11).xlsx?alt=media&token=cf7c9a08-0cca-4857-b7a3-06afda60f446"
         
       >
         Click to download
@@ -70,7 +70,7 @@ export default function DataEncoderDashboard() {
   <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
   <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
 </svg> <a className={classes.download} style={{color:"white"}}
-        href="https://firebasestorage.googleapis.com/v0/b/phoneauth2-c5056.appspot.com/o/grade2.xlsx?alt=media&token=d372ad59-b47f-43e1-9cea-c19da3ce57d2"
+        href="https://firebasestorage.googleapis.com/v0/b/phoneauth2-c5056.appspot.com/o/grade2%20(3).xlsx?alt=media&token=33b73275-55ec-42fd-bc3d-0c0877a1a9dc"
         
       >
         Click to download
@@ -117,7 +117,7 @@ export default function DataEncoderDashboard() {
   <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
   <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
 </svg> <a  className={classes.download} style={{color:"white",  }}
-        href="https://firebasestorage.googleapis.com/v0/b/phoneauth2-c5056.appspot.com/o/attendance.xlsx?alt=media&token=92ff33b6-c091-4efb-b04d-0a9374c9e0f6"
+        href="https://firebasestorage.googleapis.com/v0/b/phoneauth2-c5056.appspot.com/o/attendance%20(2).xlsx?alt=media&token=be06d939-0fb1-443f-a887-0d7c091cf270"
         
       >
         Click to download
